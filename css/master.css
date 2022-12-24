@@ -6,6 +6,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
   margin: 0;
 }
 a {
@@ -19,4 +20,8 @@ ul {
 }
 *:focus {
   outline: none;
+}
+.page {
+  min-height: 100vh;
+  background-color: #f1f5f9;
 }
