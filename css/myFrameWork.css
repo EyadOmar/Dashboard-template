@@ -55,3 +55,11 @@
 .rad-6 {
   border-radius: 0.6rem;
 }
+/* /////////////// */
+/* Utils  */
+/* /////////////// */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
