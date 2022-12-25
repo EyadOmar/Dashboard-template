@@ -1,6 +1,11 @@
 /* /////////////// */
 /* Box Model  */
 /* /////////////// */
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+}
 .flex {
   display: flex;
 }
@@ -9,6 +14,12 @@
 }
 .justify-btw {
   justify-content: space-between;
+}
+.grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 2rem;
 }
 /* /////////////// */
 /* Padding + Margin  */
@@ -21,6 +32,9 @@
 }
 .p-20 {
   padding: 2rem;
+}
+.m-inline-20 {
+  margin-inline: 2rem;
 }
 .m-20 {
   margin: 2rem;
@@ -51,6 +65,11 @@
 /* /////////////// */
 .txt-c {
   text-align: center;
+}
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
 }
 .fs-14 {
   font-size: 1.4rem;

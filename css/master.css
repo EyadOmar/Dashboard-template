@@ -141,7 +141,7 @@ header .right img {
   margin-left: 15px;
 }
 /* ----------------------------------------- */
-/* ------------Content----------------- */
+/* ------------pages heading----------------- */
 /* ----------------------------------------- */
 main h1 {
   margin: 2rem 2rem 4rem;
@@ -161,4 +161,17 @@ main h1::before {
 main h1::after {
   width: 6rem;
   background-color: black;
+}
+/* ----------------------------------------- */
+/* ------------wrapper----------------- */
+/* ----------------------------------------- */
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(20rem, 1fr);
+    margin-inline: 1rem;
+    gap: 1rem;
+  }
 }
