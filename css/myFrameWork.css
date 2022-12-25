@@ -7,11 +7,17 @@
 .align-c {
   align-items: center;
 }
+.justify-btw {
+  justify-content: space-between;
+}
 /* /////////////// */
 /* Padding + Margin  */
 /* /////////////// */
 .p-10 {
   padding: 1rem;
+}
+.p-15 {
+  padding: 1.5rem;
 }
 .p-20 {
   padding: 2rem;
@@ -55,6 +61,9 @@
 .rad-6 {
   border-radius: 0.6rem;
 }
+.rad-10 {
+  border-radius: 1rem;
+}
 /* /////////////// */
 /* Utils  */
 /* /////////////// */
@@ -62,4 +71,12 @@
   .hide-mobile {
     display: none;
   }
+}
+.w-full {
+  width: 100%;
+}
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
