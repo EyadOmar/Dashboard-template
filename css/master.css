@@ -175,3 +175,67 @@ main h1::after {
     gap: 1rem;
   }
 }
+/* ----------------------------------------- */
+/* ------------welcome box----------------- */
+/* ----------------------------------------- */
+.welcome {
+  overflow: hidden;
+}
+.welcome .intro {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.welcome .intro::after {
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 6rem;
+  background-image: url("../imgs/avatar.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 15px;
+  bottom: -3rem;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+.welcome .intro article {
+  margin-bottom: 5rem;
+}
+.welcome .intro img {
+  width: 15rem;
+}
+.welcome .bio {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.welcome .bio .box {
+  flex: 1;
+}
+.welcome .bio .box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.welcome .visit {
+  margin: 0 1.5rem 1.5rem auto;
+  transition: 0.3s;
+}
+.welcome .visit:hover {
+  background-color: var(--blue-alt-color);
+}
+@media (max-width: 767px) {
+  .welcome .intro {
+    padding-bottom: 3rem;
+    text-align: left;
+  }
+  .welcome .intro::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .welcome .intro article {
+    margin-bottom: 1rem;
+  }
+  .welcome .bio .box:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}

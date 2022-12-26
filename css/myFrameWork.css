@@ -1,13 +1,25 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --light-grey: #ccc;
+}
 /* /////////////// */
 /* Box Model  */
 /* /////////////// */
-@media (max-width: 767px) {
-  .block-mobile {
-    display: block;
-  }
+.block {
+  display: block;
 }
 .flex {
   display: flex;
+}
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .align-c {
   align-items: center;
@@ -20,6 +32,14 @@
 }
 .gap-20 {
   gap: 2rem;
+}
+@media (max-width: 767px) {
+  .block-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
 }
 /* /////////////// */
 /* Padding + Margin  */
@@ -42,6 +62,15 @@
 .mt-0 {
   margin-top: 0;
 }
+.mt-20 {
+  margin-top: 2rem;
+}
+.mb-10 {
+  margin-bottom: 1rem;
+}
+.mb-20 {
+  margin-bottom: 2rem;
+}
 .ml-10 {
   margin-left: 1rem;
 }
@@ -53,6 +82,15 @@
 }
 .bgc-white {
   background-color: white;
+}
+.bgc-blue {
+  background-color: var(--blue-color);
+}
+.c-gray {
+  color: var(--grey-color);
+}
+.c-white {
+  color: white;
 }
 /* /////////////// */
 /* Position  */
@@ -84,18 +122,17 @@
   border-radius: 1rem;
 }
 /* /////////////// */
-/* Utils  */
+/* Width  */
 /* /////////////// */
-@media (max-width: 767px) {
-  .hide-mobile {
-    display: none;
-  }
-}
 .w-full {
   width: 100%;
 }
-.between-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.w-fit {
+  width: fit-content;
+}
+/* /////////////// */
+/* Utils  */
+/* /////////////// */
+
+.btn {
 }
