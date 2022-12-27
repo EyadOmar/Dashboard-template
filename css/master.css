@@ -239,3 +239,17 @@ main h1::after {
     margin-bottom: 2rem;
   }
 }
+/* ----------------------------------------- */
+/* ------------Quick draft box----------------- */
+/* ----------------------------------------- */
+.quick-draft textarea {
+  resize: none;
+  min-height: 18rem;
+}
+.quick-draft .save {
+  margin-left: auto;
+  transition: 0.3s;
+}
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}

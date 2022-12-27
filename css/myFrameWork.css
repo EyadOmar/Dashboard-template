@@ -115,6 +115,9 @@
 /* /////////////// */
 /* Border  */
 /* /////////////// */
+.b-none {
+  border: none;
+}
 .rad-6 {
   border-radius: 0.6rem;
 }
@@ -133,6 +136,8 @@
 /* /////////////// */
 /* Utils  */
 /* /////////////// */
-
 .btn {
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
 }
