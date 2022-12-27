@@ -253,3 +253,56 @@ main h1::after {
 .quick-draft .save:hover {
   background-color: var(--blue-alt-color);
 }
+/* ----------------------------------------- */
+/* ------------Targets----------------- */
+/* ----------------------------------------- */
+.targets .holder .money {
+  --target-clr: var(--blue-color);
+  --target-alt-clr: rgba(0, 0, 255, 0.2);
+}
+.targets .holder .project {
+  --target-clr: var(--orange-color);
+  --target-alt-clr: rgba(255, 0, 0, 0.2);
+}
+.targets .holder .teams {
+  --target-clr: var(--green-color);
+  --target-alt-clr: rgba(0, 255, 0, 0.2);
+}
+.targets .holder .box .left {
+  background-color: var(--target-alt-clr);
+  color: var(--target-clr);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.2rem;
+}
+.targets .holder .box .right {
+  flex: 1;
+}
+.targets .holder .box .right h3 {
+  margin-block: 0.5rem;
+}
+.targets .holder .box .right .progress {
+  background-color: var(--target-alt-clr);
+}
+.targets .holder .box .right .progress > span {
+  height: 0.4rem;
+  background-color: var(--target-clr);
+}
+.targets .holder .box .right .progress > span > span {
+  position: absolute;
+  font-size: 1.4rem;
+  background-color: var(--target-clr);
+  right: -2rem;
+  bottom: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.6rem;
+}
+.targets .holder .box .right .progress > span > span::after {
+  content: "";
+  position: absolute;
+  border: 7px solid;
+  border-color: var(--target-clr) transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -13px;
+}
