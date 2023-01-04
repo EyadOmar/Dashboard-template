@@ -312,9 +312,31 @@ main h1::after {
 .tickets .box {
   flex-basis: calc(50% - 10px);
 }
-
 @media (max-width: 768px) {
   .tickets .box {
     flex-basis: 100%;
+  }
+}
+/* ----------------------------------------- */
+/* ------------news----------------- */
+/* ----------------------------------------- */
+.news .row:not(:last-of-type) {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+.news .row img {
+  width: 10rem;
+}
+.news .row article {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .news .row img {
+    margin-bottom: 1.5rem;
+  }
+  .news .row .date {
+    margin: 1rem auto;
+    width: fit-content;
   }
 }
