@@ -306,3 +306,15 @@ main h1::after {
   transform: translateX(-50%);
   bottom: -13px;
 }
+/* ----------------------------------------- */
+/* ------------tickets----------------- */
+/* ----------------------------------------- */
+.tickets .box {
+  flex-basis: calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+  .tickets .box {
+    flex-basis: 100%;
+  }
+}
