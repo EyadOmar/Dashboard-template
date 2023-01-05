@@ -344,7 +344,7 @@ main h1::after {
 /* ----------------------------------------- */
 .tasks .task.completed h3,
 .tasks .task.completed p {
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .tasks .task.completed h3,
 .tasks .task.completed p {
@@ -359,4 +359,11 @@ main h1::after {
 .tasks .task .delete:hover,
 .tasks .task .delete.active {
   color: var(--red-color);
+}
+/* ----------------------------------------- */
+/* ------------uploads----------------- */
+/* ----------------------------------------- */
+.uploads .upload .file img {
+  width: 4rem;
+  height: 4rem;
 }

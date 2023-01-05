@@ -58,17 +58,29 @@
 /* /////////////// */
 /* Padding + Margin  */
 /* /////////////// */
+.p-block-15 {
+  padding-block: 1.5rem;
+}
 .p-10 {
   padding: 1rem;
 }
 .p-15 {
   padding: 1.5rem;
 }
+.pt-15 {
+  padding-top: 1.5rem;
+}
 .p-20 {
   padding: 2rem;
 }
 .m-block-10 {
   margin-block: 1rem;
+}
+.m-block-15 {
+  margin-block: 1.5rem;
+}
+.m-block-20 {
+  margin-block: 2rem;
 }
 .m-inline-20 {
   margin-inline: 2rem;
@@ -84,6 +96,9 @@
 }
 .mt-20 {
   margin-top: 2rem;
+}
+.mr-10 {
+  margin-right: 1rem;
 }
 .mb-5 {
   margin-bottom: 0.5rem;
@@ -138,6 +153,9 @@
 /* /////////////// */
 .txt-c {
   text-align: center;
+}
+.fw-500 {
+  font-weight: 500;
 }
 .fs-14 {
   font-size: 1.4rem;
