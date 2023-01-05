@@ -342,18 +342,21 @@ main h1::after {
 /* ----------------------------------------- */
 /* ------------news----------------- */
 /* ----------------------------------------- */
-.tasks .task.completed {
-  color: var(--grey-color);
-  opacity: 0.5;
+.tasks .task.completed h3,
+.tasks .task.completed p {
+  transition: 0.3s;
 }
 .tasks .task.completed h3,
 .tasks .task.completed p {
   text-decoration: line-through;
+  color: var(--grey-color);
+  opacity: 0.5;
 }
 .tasks .task .delete {
   transition: color 0.3s;
   cursor: pointer;
 }
-.tasks .task .delete:hover {
+.tasks .task .delete:hover,
+.tasks .task .delete.active {
   color: var(--red-color);
 }
