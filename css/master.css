@@ -323,7 +323,6 @@ main h1::after {
 .news .row:not(:last-of-type) {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #eee;
 }
 .news .row img {
   width: 10rem;
@@ -339,4 +338,22 @@ main h1::after {
     margin: 1rem auto;
     width: fit-content;
   }
+}
+/* ----------------------------------------- */
+/* ------------news----------------- */
+/* ----------------------------------------- */
+.tasks .task.completed {
+  color: var(--grey-color);
+  opacity: 0.5;
+}
+.tasks .task.completed h3,
+.tasks .task.completed p {
+  text-decoration: line-through;
+}
+.tasks .task .delete {
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.tasks .task .delete:hover {
+  color: var(--red-color);
 }

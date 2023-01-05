@@ -16,6 +16,9 @@
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -63,6 +66,9 @@
 }
 .p-20 {
   padding: 2rem;
+}
+.m-block-10 {
+  margin-block: 1rem;
 }
 .m-inline-20 {
   margin-inline: 2rem;
@@ -158,6 +164,9 @@
 }
 .border-ccc {
   border: 1px solid #ccc;
+}
+.border-b-eee {
+  border-bottom: 1px solid #eee;
 }
 /* /////////////// */
 /* Width  */
