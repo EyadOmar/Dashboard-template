@@ -61,6 +61,9 @@
 .p-block-15 {
   padding-block: 1.5rem;
 }
+.p-block-20 {
+  padding-block: 2rem;
+}
 .p-10 {
   padding: 1rem;
 }
@@ -69,6 +72,9 @@
 }
 .pt-15 {
   padding-top: 1.5rem;
+}
+.pt-20 {
+  padding-top: 2rem;
 }
 .p-20 {
   padding: 2rem;
@@ -96,6 +102,9 @@
 }
 .mt-20 {
   margin-top: 2rem;
+}
+.mt-25 {
+  margin-top: 2.5rem;
 }
 .mr-10 {
   margin-right: 1rem;
