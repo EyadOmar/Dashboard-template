@@ -492,3 +492,43 @@ main h1::after {
 .social a {
   background-color: var(--social-clr);
 }
+/* ----------------------------------------- */
+/* ------------Projects----------------- */
+/* ----------------------------------------- */
+.projects {
+  grid-column: 1/-1;
+}
+.projects .table-container {
+  overflow-x: auto;
+}
+.projects table {
+  min-width: 100rem;
+  text-align: left;
+  border-spacing: 0;
+  width: 100%;
+}
+.projects table td,
+.projects table th {
+  padding: 1.5rem;
+}
+.projects table tbody td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: background-color 0.5s;
+}
+.projects table tbody td:last-child {
+  border-right: 1px solid #eee;
+}
+.projects table tbody tr:hover td {
+  background-color: #f1f7f7;
+}
+.projects table img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  background-color: white;
+}
+.projects table img:not(:first-child) {
+  margin-left: -2rem;
+}

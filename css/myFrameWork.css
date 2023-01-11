@@ -139,6 +139,15 @@
 .bgc-blue {
   background-color: var(--blue-color);
 }
+.bgc-orange {
+  background-color: var(--orange-color);
+}
+.bgc-red {
+  background-color: var(--red-color);
+}
+.bgc-green {
+  background-color: var(--green-color);
+}
 .c-gray {
   color: var(--grey-color);
 }
