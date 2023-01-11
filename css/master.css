@@ -167,6 +167,7 @@ main h1::after {
 /* ----------------------------------------- */
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+  margin-bottom: 2rem;
 }
 @media (max-width: 767px) {
   .wrapper {
