@@ -14,7 +14,7 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -62,7 +62,7 @@ aside > h3 {
 }
 aside > h3::before,
 aside > h3::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: black;
   left: 50%;
@@ -127,7 +127,7 @@ header .left .search-bar:focus::placeholder {
 }
 header .right .notf::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -148,7 +148,7 @@ main h1 {
 }
 main h1::before,
 main h1::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 0.3rem;
   left: 0;
@@ -188,10 +188,10 @@ main h1::after {
 }
 .welcome .intro::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 6rem;
   height: 6rem;
-  background-image: url("../imgs/avatar.png");
+  background-image: url('../imgs/avatar.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,7 +299,7 @@ main h1::after {
   border-radius: 0.6rem;
 }
 .targets .holder .box .right .progress > span > span::after {
-  content: "";
+  content: '';
   position: absolute;
   border: 7px solid;
   border-color: var(--target-clr) transparent transparent transparent;
@@ -372,7 +372,7 @@ main h1::after {
 /* ------------latest projects----------------- */
 /* ----------------------------------------- */
 .latest-projects ul::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--blue-color);
   width: 2px;
@@ -381,7 +381,7 @@ main h1::after {
   top: 0;
 }
 .latest-projects ul li::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: white;
   border: 0.2rem solid white;
@@ -531,4 +531,47 @@ main h1::after {
 }
 .projects table img:not(:first-child) {
   margin-left: -2rem;
+}
+/* ----------------------------------------- */
+/* ------------settings----------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* ------------toggle checkbox----------------- */
+/* ----------------------------------------- */
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  width: 7.8rem;
+  height: 3.2rem;
+  border-radius: 1.5rem;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.toggle-switch::before {
+  position: absolute;
+  content: '\f00d';
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: white;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  top: 0.4rem;
+  left: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  transition: 0.5s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: '\f00c';
+  left: 5rem;
+  color: var(--blue-color);
 }
