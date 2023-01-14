@@ -593,3 +593,17 @@ main h1::after {
   border: 1px solid #ccc;
   min-height: 14rem;
 }
+/* ----------------------------------------- */
+/* ------------general Info----------------- */
+/* ----------------------------------------- */
+.general-info input {
+  background-color: transparent;
+  outline: none;
+}
+.general-info .email input {
+  background-color: #f0f4f8;
+  cursor: not-allowed;
+}
+.general-info .email input::placeholder {
+  color: #bbb;
+}
