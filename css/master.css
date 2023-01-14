@@ -550,6 +550,7 @@ main h1::after {
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
+  display: none;
 }
 .toggle-switch {
   width: 7.8rem;
