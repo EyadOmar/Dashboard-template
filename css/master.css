@@ -536,6 +536,15 @@ main h1::after {
 /* ------------settings----------------- */
 /* ----------------------------------------- */
 /* ----------------------------------------- */
+.settings-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+  .settings-page {
+    grid-template-columns: minmax(250px, 1fr);
+    gap: 10px;
+  }
+}
 /* ------------toggle checkbox----------------- */
 /* ----------------------------------------- */
 .toggle-checkbox {
@@ -549,6 +558,7 @@ main h1::after {
   position: relative;
   transition: all 0.5s;
   cursor: pointer;
+  background-color: #ccc;
 }
 .toggle-switch::before {
   position: absolute;
@@ -574,4 +584,12 @@ main h1::after {
   content: '\f00c';
   left: 5rem;
   color: var(--blue-color);
+}
+/* ----------------------------------------- */
+/* ------------site control----------------- */
+/* ----------------------------------------- */
+.control textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  min-height: 14rem;
 }

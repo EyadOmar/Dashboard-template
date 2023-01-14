@@ -114,11 +114,29 @@
           </div>
         </header>
         <h1 class="pos-rlt">Settings</h1>
-        <div class="settings-page">
-          <label>
-            <input type="checkbox" class="toggle-checkbox" checked />
-            <div class="toggle-switch bgc-ccc"></div>
-          </label>
+        <div class="settings-page m-20 grid gap-20">
+          <div class="control bgc-white rad-10 p-20">
+            <h2 class="mt-0 mb-10">Site Control</h2>
+            <p class="mt-0 mb-20 c-gray fs-16">
+              Control The Website If There Is Maintenance
+            </p>
+            <div class="toggle mb-20 between-flex">
+              <article>
+                <h3 class="mt-0 mb-5 fs-16">Website Control</h3>
+                <span class="fs-14 c-gray"
+                  >Open/Close Website And Type The Reason</span
+                >
+              </article>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <textarea
+              class="block p-10 rad-6 w-full"
+              placeholder="Close Message Content"
+            ></textarea>
+          </div>
         </div>
       </main>
     </div>
