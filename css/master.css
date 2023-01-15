@@ -589,7 +589,7 @@ main h1::after {
 /* ----------------------------------------- */
 /* ------------site control----------------- */
 /* ----------------------------------------- */
-.control textarea {
+.settings-page .control textarea {
   resize: none;
   border: 1px solid #ccc;
   min-height: 14rem;
@@ -597,14 +597,36 @@ main h1::after {
 /* ----------------------------------------- */
 /* ------------general Info----------------- */
 /* ----------------------------------------- */
-.general-info input {
+.settings-page .general-info input {
   background-color: transparent;
   outline: none;
 }
-.general-info .email input {
+.settings-page .general-info .email input {
   background-color: #f0f4f8;
   cursor: not-allowed;
 }
-.general-info .email input::placeholder {
+.settings-page .general-info .email input::placeholder {
   color: #bbb;
+}
+/* ----------------------------------------- */
+/* ------------social Info----------------- */
+/* ----------------------------------------- */
+.settings-page .social-info i {
+  width: 4rem;
+  height: 4rem;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 0.6rem 0 0 0.6rem;
+  transition: 0.3s;
+}
+.settings-page .social-info input {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  height: 4rem;
+  padding-left: 1rem;
+  border-radius: 0 0.6rem 0.6rem 0;
+}
+.settings-page .social-info > div:focus-within i {
+  color: black;
 }
