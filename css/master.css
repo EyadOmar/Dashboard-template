@@ -631,3 +631,50 @@ main h1::after {
 .settings-page .social-info > div:focus-within i {
   color: black;
 }
+/* ----------------------------------------- */
+/* ------------widget-control----------------- */
+/* ----------------------------------------- */
+.widget-controls .control input[type='checkbox'] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.widget-controls .control label {
+  padding-left: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+.widget-controls .control label::before,
+.widget-controls .control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+.widget-controls .control label::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+}
+.widget-controls .control label:hover:before {
+  border-color: var(--blue-alt-color);
+}
+.widget-controls .control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: '\f00c';
+  font-weight: 900;
+  color: white;
+  background-color: var(--blue-color);
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: 0.5s;
+}
+.widget-controls .control input[type='checkbox']:checked + label::after {
+  transform: scale(1);
+}
