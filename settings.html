@@ -266,6 +266,51 @@
               <label for="four">Top Search Items</label>
             </div>
           </div>
+
+          <div class="backup-manager bgc-white rad-10 p-20">
+            <h2 class="mt-0 mb-10">Backup Manager</h2>
+            <p class="mt-0 mb-20 c-gray fs-16">
+              Control Backup Time And Location
+            </p>
+            <div class="dates border-b-eee mb-20">
+              <div class="date flex align-c mb-15">
+                <input type="radio" name="time" id="daily" checked />
+                <label for="daily">Daily</label>
+              </div>
+              <div class="date flex align-c mb-15">
+                <input type="radio" name="time" id="weekly" />
+                <label for="weekly">Weekly</label>
+              </div>
+              <div class="date flex align-c mb-15">
+                <input type="radio" name="time" id="monthly" />
+                <label for="monthly">Monthly</label>
+              </div>
+            </div>
+
+            <div class="servers flex align-c txt-c">
+              <input type="radio" name="servers" id="server-one" />
+              <div class="server mb-15 rad-6 w-full">
+                <label class="block m-15" for="server-one">
+                  <i class="fa fa-solid fa-server block mb-10"></i>
+                  MegaMan
+                </label>
+              </div>
+              <input type="radio" name="servers" id="server-two" checked />
+              <div class="server mb-15 rad-6 w-full">
+                <label class="block m-15" for="server-two">
+                  <i class="fa-solid fa-server block mb-10"></i>
+                  Zero
+                </label>
+              </div>
+              <input type="radio" name="servers" id="server-three" />
+              <div class="server mb-15 rad-6 w-full">
+                <label class="block m-15" for="server-three">
+                  <i class="fa-solid fa-server block mb-10"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>

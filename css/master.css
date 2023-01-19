@@ -678,3 +678,61 @@ main h1::after {
 .widget-controls .control input[type='checkbox']:checked + label::after {
   transform: scale(1);
 }
+/* ----------------------------------------- */
+/* ------------backup-manager----------------- */
+/* ----------------------------------------- */
+.backup-manager input[type='radio'] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.backup-manager .date label {
+  padding-left: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+.backup-manager .date label::before,
+.backup-manager .date label::after {
+  position: absolute;
+  content: '';
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 50%;
+  transition: 0.35s;
+}
+.backup-manager .date label::before {
+  width: 1.8rem;
+  background-color: white;
+  border: 1px solid var(--grey-color);
+  left: 0;
+  margin-top: -1rem;
+}
+.backup-manager .date label::after {
+  width: 1rem;
+  background-color: var(--blue-color);
+  left: 0.5rem;
+  margin-top: -0.55rem;
+  transform: scale(0);
+}
+.backup-manager .date input[type='radio']:checked + label::before {
+  border-color: var(--blue-color);
+}
+.backup-manager .date input[type='radio']:checked + label::after {
+  transform: scale(1);
+}
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    flex-wrap: wrap;
+  }
+}
+.backup-manager .servers .server {
+  border: 2px solid #eee;
+  position: relative;
+  transition: 0.35s;
+}
+.backup-manager .servers label {
+  cursor: pointer;
+}
+.backup-manager .servers input:checked + .server {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
