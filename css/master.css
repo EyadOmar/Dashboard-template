@@ -736,3 +736,65 @@ main h1::after {
   border-color: var(--blue-color);
   color: var(--blue-color);
 }
+/* ----------------------------------------- */
+/* ------------profile----------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+@media (min-width: 768px) {
+  .profile-page .profile-info {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 4rem;
+  }
+}
+.profile-page .profile-info .cover {
+  flex-direction: column;
+  padding: 1.5rem 4rem;
+}
+.profile-page .profile-info .avatar {
+  width: 12rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.profile-page .profile-info .progress {
+  width: min(100%, 15rem);
+  height: 0.5rem;
+  border-radius: 0.6rem;
+  background-color: #eee;
+  position: relative;
+}
+.profile-page .profile-info .progress::after {
+  content: '';
+  position: absolute;
+  background-color: var(--blue-color);
+  inset: 0;
+  width: 60%;
+  border-radius: 0.6rem 0 0 0.6rem;
+}
+.profile-page .profile-info .info {
+  flex: 1;
+}
+.profile-page .profile-info .info .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.profile-page .profile-info .info p {
+  color: var(--grey-color);
+  margin: 0;
+}
+.profile-page .profile-info .info p.title {
+  flex-basis: 100%;
+}
+.profile-page .profile-info .info span {
+  color: black;
+}
+@media (max-width: 767px) {
+  .profile-page .profile-info .info .row {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+}
