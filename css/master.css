@@ -823,3 +823,84 @@ main h1::after {
   aspect-ratio: 1;
   margin-right: 10px;
 }
+/* ----------------------------------------- */
+/* ------------projects----------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+@media (max-width: 768px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-inline: 1rem;
+    gap: 1rem;
+  }
+}
+.projects-page .project .date {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+}
+.projects-page .project .team {
+  position: relative;
+  min-height: 8rem;
+}
+.projects-page .project .team a {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.projects-page .project .team a:nth-child(2) {
+  left: 2.5rem;
+}
+.projects-page .project .team a:nth-child(3) {
+  left: 5rem;
+}
+.projects-page .project .team a:nth-child(4) {
+  left: 7.5rem;
+}
+.projects-page .project .team a:nth-child(5) {
+  left: 10rem;
+}
+.projects-page .project .team a:hover {
+  z-index: 100;
+}
+.projects-page .project .team img {
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.projects-page .project .techs {
+  justify-content: flex-end;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .projects-page .project .techs {
+    flex-direction: column;
+  }
+}
+.projects-page .project .techs span {
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .projects-page .project .info {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.projects-page .project .info .prog {
+  height: 1rem;
+  width: 25rem;
+  position: relative;
+  border-radius: 0.6rem;
+}
+.projects-page .project .info .prog span {
+  display: block;
+  height: 1rem;
+  border-radius: 0.6rem 0 0 0.6rem;
+}

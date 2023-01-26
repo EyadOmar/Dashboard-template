@@ -100,6 +100,9 @@
 .m-inline-20 {
   margin-inline: 2rem;
 }
+.m-0 {
+  margin: 0;
+}
 .m-15 {
   margin: 1.5rem;
 }
