@@ -815,10 +815,10 @@ main h1::after {
 /* ----------------------------------------- */
 /* -------------Latest Activities------------------ */
 /* ----------------------------------------- */
-.latest-activites {
+.profile-page .latest-activites {
   grid-column: 2 / -1;
 }
-.latest-activites .row img {
+.profile-page .latest-activites .row img {
   width: 6.4rem;
   aspect-ratio: 1;
   margin-right: 10px;
