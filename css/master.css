@@ -904,3 +904,17 @@ main h1::after {
   height: 1rem;
   border-radius: 0.6rem 0 0 0.6rem;
 }
+/* ----------------------------------------- */
+/* ------------Courses----------------- */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width: 768px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-inline: 1rem;
+    gap: 1rem;
+  }
+}
