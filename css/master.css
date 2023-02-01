@@ -953,3 +953,50 @@ main h1::after {
 /* ------------friends----------------- */
 /* ----------------------------------------- */
 /* ----------------------------------------- */
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+@media (max-width: 768px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-inline: 1rem;
+    gap: 1rem;
+  }
+}
+.friend[data-vip='true']::after {
+  content: 'VIP';
+  position: absolute;
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 5rem;
+  right: 10%;
+  top: 59%;
+  opacity: 0.4;
+}
+.friend .contact {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 1.5rem;
+  color: var(--grey-color);
+  background-color: #eee;
+  border-radius: 50%;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.friend .contact:hover {
+  color: white;
+  background-color: var(--blue-color);
+}
+.friend .contact:nth-of-type(2) {
+  left: 6rem;
+}
+.friend .avatar {
+  border-radius: 50%;
+  width: 10rem;
+  aspect-ratio: 1;
+}
+.friend-footer {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
