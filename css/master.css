@@ -909,7 +909,7 @@ main h1::after {
 /* ----------------------------------------- */
 /* ----------------------------------------- */
 .courses-page {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 @media (max-width: 768px) {
   .courses-page {
@@ -917,4 +917,35 @@ main h1::after {
     margin-inline: 1rem;
     gap: 1rem;
   }
+}
+.courses-page .course {
+  overflow: hidden;
+}
+.courses-page .course .avatar {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  aspect-ratio: 1;
+  z-index: 1000;
+  border: 2px solid white;
+}
+.courses-page .course .cover {
+  width: 100%;
+}
+.courses-page .course article {
+  height: 20rem;
+}
+.courses-page .course article p {
+  line-height: 1.6;
+}
+.courses-page .course-info {
+  border-top: 1px solid #eee;
+}
+.courses-page .course-info .btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1.4rem;
 }
