@@ -220,6 +220,9 @@
 .fs-16 {
   font-size: 1.6rem;
 }
+.fs-18 {
+  font-size: 1.8rem;
+}
 @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;
