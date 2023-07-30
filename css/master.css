@@ -15,7 +15,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.8rem;
   margin: 0;
 }
@@ -63,7 +63,7 @@ aside > h3 {
 }
 aside > h3::before,
 aside > h3::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: black;
   left: 50%;
@@ -128,7 +128,7 @@ header .left .search-bar:focus::placeholder {
 }
 header .right .notf::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -149,7 +149,7 @@ main h1 {
 }
 main h1::before,
 main h1::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 0.3rem;
   left: 0;
@@ -189,10 +189,10 @@ main h1::after {
 }
 .welcome .intro::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 6rem;
   height: 6rem;
-  background-image: url("../imgs/avatar.png");
+  background-image: url('../imgs/avatar.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,7 +300,7 @@ main h1::after {
   border-radius: 0.6rem;
 }
 .targets .holder .box .right .progress > span > span::after {
-  content: "";
+  content: '';
   position: absolute;
   border: 7px solid;
   border-color: var(--target-clr) transparent transparent transparent;
@@ -373,7 +373,7 @@ main h1::after {
 /* ------------latest projects----------------- */
 /* ----------------------------------------- */
 .latest-projects ul::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--blue-color);
   width: 2px;
@@ -382,7 +382,7 @@ main h1::after {
   top: 0;
 }
 .latest-projects ul li::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: white;
   border: 0.2rem solid white;
@@ -564,7 +564,7 @@ main h1::after {
 }
 .toggle-switch::before {
   position: absolute;
-  content: "\f00d";
+  content: '\f00d';
   font-family: var(--fa-style-family-classic);
   font-weight: 900;
   background-color: white;
@@ -583,7 +583,7 @@ main h1::after {
   background-color: var(--blue-color);
 }
 .toggle-checkbox:checked + .toggle-switch::before {
-  content: "\f00c";
+  content: '\f00c';
   left: 5rem;
   color: var(--blue-color);
 }
@@ -634,7 +634,7 @@ main h1::after {
 /* ----------------------------------------- */
 /* ------------widget-control----------------- */
 /* ----------------------------------------- */
-.widget-controls .control input[type="checkbox"] {
+.widget-controls .control input[type='checkbox'] {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -652,7 +652,7 @@ main h1::after {
   border-radius: 4px;
 }
 .widget-controls .control label::before {
-  content: "";
+  content: '';
   width: 14px;
   height: 14px;
   border: 2px solid var(--grey-color);
@@ -662,7 +662,7 @@ main h1::after {
 }
 .widget-controls .control label::after {
   font-family: var(--fa-style-family-classic);
-  content: "\f00c";
+  content: '\f00c';
   font-weight: 900;
   color: white;
   background-color: var(--blue-color);
@@ -675,13 +675,13 @@ main h1::after {
   transform: scale(0) rotate(360deg);
   transition: 0.5s;
 }
-.widget-controls .control input[type="checkbox"]:checked + label::after {
+.widget-controls .control input[type='checkbox']:checked + label::after {
   transform: scale(1);
 }
 /* ----------------------------------------- */
 /* ------------backup-manager----------------- */
 /* ----------------------------------------- */
-.backup-manager input[type="radio"] {
+.backup-manager input[type='radio'] {
   -webkit-appearance: none;
   appearance: none;
 }
@@ -693,7 +693,7 @@ main h1::after {
 .backup-manager .date label::before,
 .backup-manager .date label::after {
   position: absolute;
-  content: "";
+  content: '';
   aspect-ratio: 1;
   border-radius: 50%;
   top: 50%;
@@ -713,10 +713,10 @@ main h1::after {
   margin-top: -0.55rem;
   transform: scale(0);
 }
-.backup-manager .date input[type="radio"]:checked + label::before {
+.backup-manager .date input[type='radio']:checked + label::before {
   border-color: var(--blue-color);
 }
-.backup-manager .date input[type="radio"]:checked + label::after {
+.backup-manager .date input[type='radio']:checked + label::after {
   transform: scale(1);
 }
 @media (max-width: 767px) {
@@ -742,10 +742,11 @@ main h1::after {
 .profile-page {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .profile-page {
-    grid-template-columns: minmax(250px, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 /* ----------------------------------------- */
@@ -754,7 +755,7 @@ main h1::after {
 .profile-page .profile-info {
   grid-column: 1 / -1;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .profile-page .profile-info {
     display: flex;
     /* justify-content: center; */
@@ -767,7 +768,7 @@ main h1::after {
   padding: 1.5rem 4rem;
 }
 .profile-page .profile-info .avatar {
-  width: 12rem;
+  width: min(100%, 12rem);
   aspect-ratio: 1;
   border-radius: 50%;
 }
@@ -779,7 +780,7 @@ main h1::after {
   position: relative;
 }
 .profile-page .profile-info .progress::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--blue-color);
   inset: 0;
@@ -804,7 +805,7 @@ main h1::after {
 .profile-page .profile-info .info span {
   color: black;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .profile-page .profile-info .info .row {
     flex-direction: column;
     justify-content: center;
@@ -963,8 +964,8 @@ main h1::after {
     gap: 1rem;
   }
 }
-.friend[data-vip="true"]::after {
-  content: "VIP";
+.friend[data-vip='true']::after {
+  content: 'VIP';
   position: absolute;
   color: var(--blue-color);
   font-weight: bold;
